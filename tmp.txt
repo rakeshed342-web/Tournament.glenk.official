@@ -1,0 +1,8 @@
+794:const Navbar = ({ coins, avatar, onAddMoney, onRedeem, onInstall, onProfileClick, onAudioClick, onSettingsClick }: { 
+799:  onInstall: () => void,
+3997:    const handleBeforeInstallPrompt = (e: any) => {
+4001:    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+4002:    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+4005:  const handleInstall = () => {
+4014:      alert("To install the app, tap the 'Add to Home Screen' option in your browser menu.");
+4356:              onInstall={handleInstall}
